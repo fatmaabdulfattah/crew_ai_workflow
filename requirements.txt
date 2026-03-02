@@ -1,0 +1,11 @@
+crewai>=0.80.0
+litellm>=1.44.22
+agentops==0.3.21
+tavily-python
+scrapegraph-py
+crewai-tools
+apscheduler
+cohere
+python-dotenv==1.0.1
+sentence-transformers
+pydantic>=2.0.0
