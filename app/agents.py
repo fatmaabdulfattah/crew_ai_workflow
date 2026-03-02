@@ -14,7 +14,7 @@ basic_llm = LLM(
     api_key=os.getenv("OPENROUTER_API_KEY"), 
     temperature=0
     )
-#Agent a
+
 
 search_queries_recommendation_agent = Agent(
     role="Search Queries Recommendation Agent",
@@ -27,7 +27,7 @@ search_queries_recommendation_agent = Agent(
     verbose=True,
 )
 
-#agent b
+
 search_client = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 
 @tool
@@ -44,7 +44,6 @@ search_engine_agent = Agent(
     tools=[search_engine_tool]
 )
 
-#agent c
 
 scrape_client = Client(api_key=os.getenv("SCRAPER_API_KEY"))
 
@@ -77,7 +76,7 @@ scraping_agent = Agent(
     verbose=True,
 )
 
-#agnet d
+
 
 procurement_report_author_agent = Agent(
     role="Procurement Report Author Agent",

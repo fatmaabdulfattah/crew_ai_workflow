@@ -6,7 +6,7 @@ from crewai import Agent, Task, Crew, Process, LLM
 output_dir = "./ai-agent-output"
 os.makedirs(output_dir, exist_ok=True)
 
-#task a
+
 
 search_queries_recommendation_task = Task(
     description="\n".join([
@@ -26,7 +26,7 @@ search_queries_recommendation_task = Task(
 )
 
 
-#task b
+
 search_engine_task = Task(
     description="\n".join([
         "The task is to search for products based on the suggested search queries.",
@@ -41,7 +41,7 @@ search_engine_task = Task(
     agent=search_engine_agent
 )
 
-#task c
+
 
 scraping_task = Task(
     description="\n".join([
@@ -55,7 +55,6 @@ scraping_task = Task(
     agent=scraping_agent
 )
 
-#task d
 
 procurement_report_author_task = Task(
     description="\n".join([
